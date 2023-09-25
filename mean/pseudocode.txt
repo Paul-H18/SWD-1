@@ -1,0 +1,20 @@
+Integer: Ganzzahl
+Double: Fließkommazahl
+
+methode() {
+
+	Double sum = 0
+	Integer counter = 0
+	Integer input 
+	
+	tue {
+		Einlesen Integer input
+		counter++
+		sum += input
+		ausgabe von (sum / counter)
+	} solange input != 0
+	
+}
+
+
+

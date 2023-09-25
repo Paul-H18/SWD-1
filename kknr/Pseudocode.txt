@@ -1,0 +1,47 @@
+Funktion Main:
+
+    Inetger vc, sum = 0, rounded_up, result
+    Inetger Array credit_card_nr[15]
+    credit_card_nr befüllen
+
+
+    for Integer i = 0, i kleiner gleich 14, i um 1 erhöhen:
+        falls i % 2 == 0 oder i == 0:                           //gerader Index -> ungerade Stelle
+            sum += Quersummer(credit_card_nr[i] * 2)
+        Ende Falls
+        Andernfalls:                                            //ungerader Index -> gerade Stelle
+            sum += credit_card_nr[i]
+        Ende Falls
+
+    Ende for
+
+
+        rounded_up = round_up(sum)
+
+        restult =round_up - sum
+
+        Ergebnis ausgeben
+
+
+Ende Funktion
+    
+
+
+
+
+Funktion Quersumme(Integer num) - Rückgabe Inetger:
+    Integer sum = 0
+    solange num > 10:
+        sum += num % 10
+        num = num / 10
+    Ende solange
+    
+    return sum
+Ende Funktion
+
+
+Funktion round_up(Integer num) - Rückgabe Integer:
+    solange num % 10 != 0:
+        num++
+    return num
+Ende Funktion
